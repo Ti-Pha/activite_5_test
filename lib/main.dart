@@ -12,6 +12,8 @@ class Etudiant {
 }
 
 class MonApplication extends StatelessWidget {
+  const MonApplication({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,12 +25,14 @@ class MonApplication extends StatelessWidget {
 
 class PageAccueil extends StatelessWidget {
   final List<Etudiant> etudiants = [
-    Etudiant(nom: 'Alice', moyenne: 17.25),
-    Etudiant(nom: 'Bob', moyenne: 16.5),
-    Etudiant(nom: 'Charlie', moyenne: 11.75),
-    Etudiant(nom: 'David', moyenne: 12.75),
-    Etudiant(nom: 'Eve', moyenne: 13.5),
+    Etudiant(nom: 'Micka', moyenne: 17.25),
+    Etudiant(nom: 'Wens', moyenne: 16.5),
+    Etudiant(nom: 'Jenny', moyenne: 11.75),
+    Etudiant(nom: 'Mirlanda', moyenne: 12.75),
+    Etudiant(nom: 'Sarah', moyenne: 13.5),
   ];
+
+  PageAccueil({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -116,6 +120,8 @@ double calculateMoyenne(List<Etudiant> etudiants) {
 }
 
 class DetailPage extends StatelessWidget {
+  const DetailPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     final etudiant = ModalRoute.of(context)!.settings.arguments as Etudiant;

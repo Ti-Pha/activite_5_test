@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
-import 'package:activite_5_test/main.dart'
-    as app; // Assurez-vous que le chemin d'accès correspond au nom de votre projet
+import 'package:activite_5_test/main.dart' as app;
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
